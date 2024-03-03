@@ -12,5 +12,9 @@ contract Contract {
     function increment() external {
         x = x + 1;
     }
+
+    function add(uint a) external view returns(uint) {
+        return a + x;
+    }
     
 }
